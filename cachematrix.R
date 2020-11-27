@@ -1,7 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The basic idea is to compute the inverse of a matrix
+## if the matrix's inverse is already found then the
+## previously found inverse is returned 
+## otherwise it is computed
 
-## Write a short comment describing this function
+## This function makes the cache matrix which is 
+## the plave to find the earlier computed
+## matrice's inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -16,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function actually returns the computed/cached
+## inverse of the matrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
